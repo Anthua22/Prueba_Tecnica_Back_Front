@@ -2,8 +2,9 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Forecast, Municipio, TemperatureUnit } from '../models/weather.models';
+import { environment } from '../../../environments/environment.development';
 
-const API_URL = '/api';
+const API_URL = environment.apiUrl;
 
 /** Único punto del frontend que conoce las URLs del backend. */
 @Injectable({ providedIn: 'root' })
