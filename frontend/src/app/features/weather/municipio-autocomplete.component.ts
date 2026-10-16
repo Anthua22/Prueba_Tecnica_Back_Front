@@ -49,7 +49,7 @@ export class MunicipioAutocompleteComponent implements OnInit {
 
   protected readonly options$ = this.control.valueChanges.pipe(
     map((value) => (typeof value === 'string' ? value.trim() : '')),
-    debounceTime(300),
+    debounceTime(400),
     distinctUntilChanged(),
     switchMap((term) =>
       term.length >= MIN_CHARS
