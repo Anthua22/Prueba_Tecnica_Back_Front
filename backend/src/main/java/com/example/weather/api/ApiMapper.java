@@ -21,7 +21,7 @@ final class ApiMapper {
                 f.mediaTemperatura(),
                 f.unidadTemperatura(),
                 f.probPrecipitacion().stream()
-                        .map(p -> new PrecipitacionResponse(p.probabilidad(), p.periodo()))
+                        .map(p -> new PrecipitacionResponse(100 - p.probabilidad(), p.periodo()))
                         .toList());
     }
 }
