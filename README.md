@@ -33,10 +33,7 @@ Endpoints:
 
 ### 2. Frontend
 
-La primera vez, genera el proyecto Angular con el código incluido en `frontend-overlay/`:
-
 ```bash
-./setup-frontend.sh
 cd frontend
 npm start        # http://localhost:4200  (proxy a http://localhost:8080)
 ```
