@@ -134,8 +134,8 @@ export class ForecastCardComponent {
 
   /** La previsión es siempre la del día siguiente. */
   protected readonly dateLabel = computed(() => {
-    const hoy = new Date();
-    const text = hoy.toLocaleDateString('es-ES', {
+    const tomorrow = new Date();
+    const text = tomorrow.toLocaleDateString('es-ES', {
       weekday: 'long',
       day: 'numeric',
       month: 'long',
